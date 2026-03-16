@@ -12,9 +12,12 @@ int main()
     {
         printf("\n\n Informe o tipo de venda 1-Varejista ou 2-Atacado: ");
         scanf("%d", &tipo);
-        if (tipo != 1 && tipo != 2)
-        {
+        if (tipo != 1 && tipo != 2) {
             printf("\n\n Tipo informado invalido!!!");
+        } else if (tipo == 1) {
+            printf("\n\nO Tipo informado foi VAREJISTA\n");
+        } else {
+            printf("\n\nO Tipo informado foi ATACADO\n");
         }
 
     } while (tipo != 1 && tipo != 2);
